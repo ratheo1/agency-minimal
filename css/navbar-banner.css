@@ -1,0 +1,234 @@
+.main {
+    background-color: #F6F8FB;
+    width: 100%;
+    height: 900px;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 30px 0px;
+    transition: 0.3s;
+    
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu-item {
+    text-decoration: none;
+    padding: 15px;
+    color: #02073E;
+    transition: 0.2s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 210px;
+}
+
+.menu-item:hover {
+    color: #8D448B;
+}
+
+.btn-item {
+    border-radius: 5px;
+    border: 2px solid #8D448B;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#btn-action, #btn-back{
+    display: none;
+}
+
+.btn-register {
+    background-color: transparent;
+    color: #8D448B;
+    padding: 10px 20px;
+}
+
+
+.btn-register:hover {
+    background-color: #8D448B;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 190px;
+    gap: 25px;
+}
+
+.main-content img,
+.banner-content {
+    width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    font-family: "DM Sans Bold";
+    color: #02073E;
+    line-height: 75px;
+}
+
+.banner-content>p {
+    padding-top: 30px;
+    font-size: 16px;
+    color: #02073E;
+    line-height: 35px;
+}
+
+.input-subscribe {
+    margin-top: 30px;
+}
+
+.input-subscribe input {
+    width: 320px;
+    padding: 0px 25px;
+    border: none;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.073);
+    border-radius: 10px;
+    outline: none;
+    height: 65px;
+}
+
+.btn-subscribe {
+    background-color: #8D448B;
+    color: white;
+    padding: 0px 40px;
+    height: 65px;
+    font-size: 16px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.btn-subscribe:hover {
+    background-color: transparent;
+    color: #8D448B;
+}
+
+.logo-sponsor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 35px;
+    color: #BAC3CF;
+}
+
+.logo-sponsor img {
+    width: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .navbar,
+    .main-content {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .menu {
+        gap: 30px;
+    }
+
+    .banner-content h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+
+    .main-content {
+        padding-top: 80px;
+        gap: 0px;
+    }
+
+    .input-subscribe input {
+        width: 250px;
+        height: 60px;
+    }
+
+    .btn-subscribe {
+        height: 50px;
+        padding: 0px 25px;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    #btn-action, #btn-back{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    nav {
+        position: relative;
+        background-color: #fff !important;
+        padding: 15px 0px !important;
+    }
+
+    .active{
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        align-items: flex-start;
+        top: 100%;
+        left: 0px;
+        padding-bottom: 150%;
+        padding-left: 30px;
+        width: 300px;
+        transform: translateX(-100%);
+        transition: 0.5s;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar .menu-item {
+        padding: 10px 0px
+    }
+
+    #btn-action {
+        display: block;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .main-content>img,
+    .banner-content {
+        width: 100%;
+    }
+
+    .main-content>img {
+        padding-top: 40px;
+    }
+
+    .banner-content h1 {
+        font-size: 35px;
+        line-height: normal;
+    }
+    .logo-sponsor img{
+        width: 50px;
+    }
+}
+

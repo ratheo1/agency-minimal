@@ -1,0 +1,138 @@
+.video-container {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+#detail{
+    height: 1000px;
+}
+
+.text-video {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.text-video h1 {
+    font-size: 2.8em;
+}
+
+.text-video p {
+    font-size: 1em;
+    margin: 20px 0;
+    color: #7a7b7b;
+}
+
+.desc-video{
+    line-height: 25px;
+}
+.detail-video{
+    cursor: pointer;
+    color: #8D448B;
+    text-decoration: none;
+}
+.detail-video i{
+    padding-left: 5px;
+    font-size: 13px;
+}
+.play-video{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: relative;
+    bottom: 425px;
+    background: #fff;
+    cursor: pointer;
+}
+.image-video{
+    border-radius: 8px;
+}
+.image-video img {
+    width: 100%;
+}
+.popup-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 2000;
+}
+.popup-video span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+.popup-video iframe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    width: 850px;
+    height: 500px;
+    border: none;
+}
+
+@media screen and (max-width:1200px) {
+    .video-container {
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .text-video {
+        text-align: center;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .text-video h1 {
+        font-size: 2em;
+    }
+    
+    .text-video p {
+        font-size: 1em;
+        margin: 15px 0;
+    }
+    .desc-video{
+        line-height: 25px;
+    }
+    .play-video{
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: relative;
+        bottom: 200px;
+        background: #fff;
+        cursor: pointer;
+    }
+    .image-video img {
+        padding: 0 20px;
+    }
+    
+    .play-video img{
+        width: 20px;
+    }
+    .popup-video iframe{
+        width: 95%;
+    }
+    #detail{
+        height: 550px;
+    }
+}

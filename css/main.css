@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "DM Sans";
+    src: url("../fonts/DMSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "DM Sans Bold";
+    src: url("../fonts/DMSans-Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+html{
+    scroll-behavior: smooth;
+}
